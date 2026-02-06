@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>krwin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>krwin 로그인</h1>
+        <form>
+            <input type="text" placeholder="이메일" required>
+            <input type="password" placeholder="비밀번호" required>
+            <input type="password" placeholder="비밀번호 확인" required>
+            <input type="text" placeholder="보안 문자 (영어 5글자)" required>
+            <button type="submit">로그인</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1>충전</h1>
+        <form>
+            <select>
+                <option value="계좌1">계좌 1</option>
+                <option value="계좌2">계좌 2</option>
+                <option value="계좌3">계좌 3</option>
+            </select>
+            <input type="number" min="10000" max="30000" placeholder="입금할 금액" required>
+            <button type="submit">충전</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1>출금</h1>
+        <form>
+            <select>
+                <option value="계좌1">계좌 1</option>
+                <option value="계좌2">계좌 2</option>
+                <option value="계좌3">계좌 3</option>
+            </select>
+            <button type="submit">출금</button>
+        </form>
+    </div>
+
+</body>
+</html>
